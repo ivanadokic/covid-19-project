@@ -41,18 +41,17 @@ function App() {
   const lastUpdated = date.toString();
   return (
     <div>
+
       <Router>
-
-
 
         <NavBar />
         <Route path='/home' component={SummaryCard}></Route>
-        {/* <Route exact path={'/new'} component={CountryList}></Route> */}
+        <Route exact path={'/new'} component={CountryList}></Route>
 
-        {/* <CardDeck>
-          <SummaryCard title="Total Cases" bg="secondary" lastUpdated={lastUpdated} total={latest.cases} />
-          <SummaryCard title="Deaths" bg="danger" lastUpdated={lastUpdated} total={latest.deaths} />
-          <SummaryCard title="Recovered" bg="success" lastUpdated={lastUpdated} total={latest.recovered} />
+        <CardDeck>
+          <SummaryCard title="Global Cases" bg="secondary" lastUpdated={lastUpdated} total={latest.cases} />
+          <SummaryCard title="Global Deaths" bg="danger" lastUpdated={lastUpdated} total={latest.deaths} />
+          <SummaryCard title="Global Recovered" bg="success" lastUpdated={lastUpdated} total={latest.recovered} />
         </CardDeck>
 
         <Form>
@@ -62,11 +61,12 @@ function App() {
               placeholder="Enter Country name"
               onChange={e => setsearchCountries(e.target.value)} />
           </Form.Group>
-        </Form> */}
+        </Form>
 
-        {/* <CountryList countries={filterCountries} /> */}
+        <CountryList countries={filterCountries} />
 
       </Router>
+
     </div >
   );
 }

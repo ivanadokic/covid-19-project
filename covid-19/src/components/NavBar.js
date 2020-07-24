@@ -12,8 +12,8 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link to="/new"> Create a New Collection</Nav.Link>
-                        <Nav.Link to="/countries"> View all data for selected Country</Nav.Link>
+                        <Nav.Link to="/summary"> Global Cases</Nav.Link>
+                        <Nav.Link to="/countries"> Cases by Country</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
