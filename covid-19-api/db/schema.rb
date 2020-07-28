@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_24_022021) do
+ActiveRecord::Schema.define(version: 2020_07_27_234249) do
 
   create_table "countries", force: :cascade do |t|
     t.string "country"
@@ -20,6 +20,12 @@ ActiveRecord::Schema.define(version: 2020_07_24_022021) do
     t.integer "population"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "flag"
+    t.integer "active"
+    t.integer "critical"
+    t.integer "tests"
+    t.integer "today_cases"
+    t.integer "today_deaths"
   end
 
   create_table "summaries", force: :cascade do |t|

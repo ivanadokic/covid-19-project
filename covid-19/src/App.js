@@ -8,6 +8,19 @@ import NavBar from './components/NavBar';
 import SummaryCard from './components/SummaryCard'
 import CountryList from './components/CountryList'
 
+
+function SummaryPage() {
+
+  return (
+    <div>I am the summary page</div>
+  )
+}
+function CountriesPage() {
+
+  return (
+    <div>I am the countries page</div>
+  )
+}
 function App() {
   const [latest, setLatest] = useState([]);  //react hooks store information into strings
   const [results, setResults] = useState([]); //from second api
@@ -19,8 +32,8 @@ function App() {
   useEffect(() => {
     axios
       .all([ //using both api
-        axios.get("https://corona.lmao.ninja/v2/all"),
-        axios.get("https://corona.lmao.ninja/v2/countries")
+        axios.get("http://localhost:3000/summaries"),
+        axios.get("http://localhost:3000/countries")
 
       ])
 
@@ -40,8 +53,8 @@ function App() {
 
       <Router>
         <NavBar />
-        <Route path='/home' component={SummaryCard}></Route>
-        <Route exact path={'/new'} component={CountryList}></Route>
+        <Route path='/summary' component={SummaryPage}></Route>
+        <Route exact path={'/countries'} component={CountriesPage}></Route>
         <CardDeck>
           <SummaryCard title="Global Cases" bg="secondary" lastUpdated={lastUpdated} total={latest.cases} />
           <SummaryCard title="Global Deaths" bg="danger" lastUpdated={lastUpdated} total={latest.deaths} />
