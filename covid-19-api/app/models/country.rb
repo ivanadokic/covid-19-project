@@ -9,8 +9,8 @@ class Country < ApplicationRecord
     :tests,
     :today_cases,
     :today_deaths,
-     :active,
-     presence: true
+    :active,
+    presence: true
 
 end
 
