@@ -56,11 +56,11 @@ class App extends Component {
             {/* {...routerProps} countries={results} */}
 
           </Switch>
-          < CardDeck >
-            <SummaryCard title="Global Cases" bg="secondary" total={this.props.summaries} />
-            <SummaryCard title="Global Deaths" bg="danger" total={this.props.summaries} />
-            <SummaryCard title="Global Recovered" bg="success" total={this.props.summaries} />
-          </CardDeck >
+          {/* < CardDeck >
+            <SummaryCard title="Global Cases" bg="secondary" total={this.props.summaries.cases} />
+            <SummaryCard title="Global Deaths" bg="danger" total={this.props.summaries.deaths} />
+            <SummaryCard title="Global Recovered" bg="success" total={this.props.summaries.recovered} />
+          </CardDeck > */}
 
           {/* lastUpdated={lastUpdated} total={latest.cases} 
           lastUpdated={lastUpdated} total={latest.deaths}
