@@ -9,13 +9,10 @@ import { fetchCountries } from '../actions/index'
 import CountryCard from './CountryCard'
 import CountryForm from './CountryForm'
 
-
 class CountryList extends Component {
   componentDidMount() {
     this.props.fetchCountries()
   }
-
-
   // const[searchCountries, setsearchCountries] = useState("");
   // filterCountries = this.props.countries.filter(item => {
   //   return searchCountries !== "" ? item.country.toLowerCase().includes(searchCountries.toLowerCase()) : item;
@@ -30,7 +27,6 @@ class CountryList extends Component {
   // });
   render() {
     const allcountries = this.props.countries.map((data, i) => <CountryCard data={data} key={i} />)
-
     return (
       < Columned>{allcountries}</Columned >
     )

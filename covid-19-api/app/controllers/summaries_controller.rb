@@ -1,8 +1,8 @@
 class SummariesController < ApplicationController
   
   def index
-   @summary = Summary.order(created_at: :desc).first
+   @summaries = Summary.order(created_at: :desc).limit(1)
  
-    render json: @summary
+    render json: @summaries
   end
 end

@@ -2822,3 +2822,2134 @@ Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1316)
 Completed 200 OK in 47ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 40585)
 
 
+Started GET "/countries" for ::1 at 2020-08-05 15:45:00 -0400
+Started GET "/summaries" for ::1 at 2020-08-05 15:45:00 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SummariesController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 49488)
+
+
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 122ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 58410)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 15:45:10 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 39414)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 15:45:12 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 15:45:13 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39381)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 15:45:45 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 15:45:49 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 15:46:08 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 15:46:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:18:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.9ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 865)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 16:18:42 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 39397)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:18:42 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 16:18:44 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:18:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:29:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 864)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:29:37 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:30:06 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 844)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:30:25 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 843)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:31:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:32:39 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:32:43 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:34:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:34:43 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:37:45 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:47:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 864)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:49:19 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 16:49:25 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 39397)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:51:13 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:53:08 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:53:34 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 16:53:37 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 16:54:20 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39506)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:54:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:54:37 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:54:41 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:54:58 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:57:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:57:35 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:57:54 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:58:42 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:58:55 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 16:59:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:00:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:00:34 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:03:09 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (26.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 90ms (Views: 0.1ms | ActiveRecord: 26.6ms | Allocations: 49692)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:03:21 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 39383)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:03:23 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 6712)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:05:21 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:05:30 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 39381)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:05:41 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:05:42 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:06:16 -0400
+Started GET "/countries" for ::1 at 2020-08-05 17:06:16 -0400
+Processing by SummariesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1923)
+
+
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 39537)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:06:23 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:06:24 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 862)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:06:28 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:07:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:07:34 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:07:46 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:07:47 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:07:48 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:07:54 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:08:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:08:29 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:08:31 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 39366)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:08:57 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:11:35 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (36.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 101ms (Views: 0.3ms | ActiveRecord: 37.2ms | Allocations: 49692)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:11:36 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 6713)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:11:37 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39381)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:13:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:13:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 860)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:13:45 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:13:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:14:10 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 843)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:23:31 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (3.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 39400)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 17:23:33 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 861)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:23:34 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 17:23:56 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 39366)
+
+
+Started GET "/" for ::1 at 2020-08-05 18:02:21 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivana/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivana/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.3ms | Allocations: 315)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 1589)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 18:02:24 -0400
+Processing by SummariesController#index as HTML
+  [1m[36mSummary Load (0.8ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 928)
+
+
+Started GET "/summary" for ::1 at 2020-08-05 18:02:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/summary"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/summaries" for ::1 at 2020-08-05 18:02:32 -0400
+Processing by SummariesController#index as HTML
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 881)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:28:21 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (1.0ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 3.4ms | ActiveRecord: 1.0ms | Allocations: 864)
+
+
+Started GET "/countries" for ::1 at 2020-08-05 21:28:23 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 80ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 39399)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:28:24 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:29:06 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:29:06 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:29:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:29:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:30:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-05 21:30:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/" for ::1 at 2020-08-05 22:06:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivana/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivana/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 195)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 736)
+
+
+Started GET "/home" for ::1 at 2020-08-05 22:06:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/summaries" for ::1 at 2020-08-05 22:06:52 -0400
+Processing by SummariesController#index as HTML
+  [1m[36mSummary Load (0.6ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 862)
+
+
+Started GET "/reviews" for ::1 at 2020-08-05 22:14:06 -0400
+Started GET "/books" for ::1 at 2020-08-05 22:14:06 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/reviews"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/summaries" for ::1 at 2020-08-06 10:16:55 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SummariesController#index as HTML
+  [1m[36mSummary Load (1.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 1.7ms | Allocations: 7348)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-06 10:16:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/summary" for ::1 at 2020-08-06 10:17:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/summary"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/summaries" for ::1 at 2020-08-06 10:17:13 -0400
+Processing by SummariesController#index as HTML
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 900)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:39:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 877)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:39:50 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 49277)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:39:58 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:40:01 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39379)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:40:18 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:40:19 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:40:51 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 843)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:40:53 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:42:15 -0400
+Started GET "/summaries" for ::1 at 2020-08-06 10:42:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Processing by SummariesController#index as */*
+Completed 200 OK in 45ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 39466)
+
+
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1060)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:43:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:43:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:43:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:43:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:43:51 -0400
+Processing by CountriesController#index as */*
+Started GET "/summaries" for ::1 at 2020-08-06 10:43:51 -0400
+  [1m[36mCountry Load (23.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+Processing by SummariesController#index as */*
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.1ms | ActiveRecord: 23.7ms | Allocations: 40073)
+
+
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 38726)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:47:37 -0400
+Processing by CountriesController#index as */*
+Started GET "/summaries" for ::1 at 2020-08-06 10:47:37 -0400
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+Processing by SummariesController#index as */*
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 40174)
+
+
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 38773)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:47:45 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 10:47:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 843)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 10:48:54 -0400
+Started GET "/summaries" for ::1 at 2020-08-06 10:48:54 -0400
+Processing by CountriesController#index as */*
+Processing by SummariesController#index as */*
+  [1m[36mCountry Load (7.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 73ms (Views: 55.9ms | ActiveRecord: 0.4ms | Allocations: 3013)
+
+
+Completed 200 OK in 104ms (Views: 0.1ms | ActiveRecord: 7.0ms | Allocations: 40438)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 11:04:56 -0400
+Started GET "/summaries" for ::1 at 2020-08-06 11:04:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.8ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 1051)
+
+
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (3.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 39523)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 18:14:05 -0400
+Started GET "/countries" for ::1 at 2020-08-06 18:14:05 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SummariesController#index as */*
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 49582)
+
+
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 93ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 56772)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 18:14:31 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.6ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 879)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 18:31:33 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 39411)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 18:32:51 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 39381)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 18:33:14 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 45ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39494)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 18:33:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 864)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 18:44:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (21.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 21.3ms | Allocations: 39402)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 18:44:29 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39364)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 19:00:08 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 39400)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 22:07:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/summaries" for ::1 at 2020-08-06 22:07:04 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 38604)
+
+
+Completed 200 OK in 64ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 40370)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:07:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 843)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 22:25:50 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (3.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 34ms (Views: 0.7ms | ActiveRecord: 3.2ms | Allocations: 39400)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:37:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.6ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 864)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:37:17 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:37:45 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:38:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 842)
+
+
+Started GET "/countries" for ::1 at 2020-08-06 22:40:33 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (5.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 93ms (Views: 0.1ms | ActiveRecord: 5.9ms | Allocations: 39399)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:41:05 -0400
+Started GET "/countries" for ::1 at 2020-08-06 22:41:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 49133)
+
+
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.6ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 1.2ms | Allocations: 6616)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:46:19 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:46:19 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:46:35 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 986)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:46:35 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:47:40 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:47:40 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:48:38 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:48:38 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:48:39 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:48:39 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:13 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:13 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:36 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:36 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 986)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:49 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:49:49 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:51:12 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 22:51:12 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:05:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1007)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:05:04 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.4ms | Allocations: 987)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:10:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:10:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:11:36 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:11:36 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:17:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 1007)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:17:28 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:18:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:18:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:19:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:19:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:24:44 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:24:44 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:24:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:24:46 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:25:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:25:20 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:29:57 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:29:57 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:32:11 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-06 23:32:11 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 09:27:47 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 86ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 49692)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:27:50 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 24.4ms | ActiveRecord: 1.1ms | Allocations: 6851)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:28:31 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 1003)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:28:31 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:30:11 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (1.0ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.0ms | Allocations: 1003)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:30:11 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:31:22 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:31:22 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.6ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:46:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 1019)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:46:12 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:46:31 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:46:31 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:47:18 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:47:18 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:47:52 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:47:52 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:39 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:39 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:58 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:48:58 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:50:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:50:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:50:47 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:50:47 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:00 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:00 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:30 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:30 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:51:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:04 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:04 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:28 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:52:28 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:53:30 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 09:53:30 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:03:11 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:03:11 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:03:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.4ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:03:32 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:05:08 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 39397)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:05:10 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:05:15 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 43ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:05:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:05:17 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:05:18 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:05:20 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:05:22 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:06:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:06:03 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.3ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:06:04 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:06:06 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:06:07 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:06:08 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:06:08 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.5ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:26 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:44 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:08:44 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:09:10 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:09:13 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:09:15 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:09:16 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:09:41 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:09:41 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:10:28 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:10:28 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:11:13 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:11:14 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:12:21 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:12:23 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:12:26 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:12:27 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:13:52 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:13:52 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:49:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (2.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 39400)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:49:51 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.7ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1004)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:49:52 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:49:53 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:49:55 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 39366)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:49:59 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:50:23 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:50:24 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:50:25 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:54:53 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.1ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 985)
+
+
+Started GET "/countries" for ::1 at 2020-08-07 10:54:53 -0400
+Processing by CountriesController#index as */*
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/controllers/countries_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 39364)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:54:54 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
+Started GET "/summaries" for ::1 at 2020-08-07 10:54:55 -0400
+Processing by SummariesController#index as */*
+  [1m[36mSummary Load (0.2ms)[0m  [1m[34mSELECT "summaries".* FROM "summaries" ORDER BY "summaries"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/summaries_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 985)
+
+
