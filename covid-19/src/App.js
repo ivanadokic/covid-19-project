@@ -12,12 +12,9 @@ import { fetchSummaries } from './actions/summaries'
 
 class App extends Component {
 
-  // const date = new Date(parseInt(latest.updated));//updated returns miliseconds so we need to make it in day time format
-  // const lastUpdated = date.toString();
   componentDidMount() {
     this.props.fetchSummaries()
   }
-
 
   render() {
 

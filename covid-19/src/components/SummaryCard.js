@@ -6,11 +6,6 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { fetchSummaries } from '../actions/summaries'
 
-// const date = new Date(parseInt('data.updated'))
-// const newdate = date.toString()
-
-// const date = new Date(parseInt(latest.updated));//updated returns miliseconds so we need to make it in day time format
-// const lastUpdated = date.toString();
 
 function SummaryCard({ data }) {
 
@@ -72,7 +67,7 @@ function SummaryCard({ data }) {
     </CardDeck >
 
   )
-  // const date = new Date('data.updated').toString(),
+
 }
 
 
