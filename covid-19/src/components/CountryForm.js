@@ -1,29 +1,27 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import Card from 'react-bootstrap/Card';
-import Columned from 'react-columned';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form'
 import { connect } from 'react-redux'
 import { fetchCountries } from '../actions/index'
 import CountryCard from './CountryCard'
 
+function CountryForm({ data }) {
 
-class CountryForm extends Component {
+  // filterCountries = data.countries.filter(item => {
+  //   return searchCountries !== "" ? item.country.toLowerCase().includes(searchCountries.toLowerCase()) : item;
+  // })
+  // allcountries = filterCountries.map((data, i) => {
+  //   return (
+  //     <CountryCard
+  //       key={i}
+  //       {...data}
+  //     />
+  //   );
+  // });
 
-  filterCountries = this.props.countries.filter(item => {
-    return searchCountries !== "" ? item.country.toLowerCase().includes(searchCountries.toLowerCase()) : item;
-  })
-  allcountries = filterCountries.map((data, i) => {
-    return (
-      <CountryCard
-        key={i}
-        {...data}
-      />
-    );
-  });
+  return (
 
-  return() {
     <Form>
       <Form.Group controlId="formGroupSearch">
         <Form.Label>Search Country</Form.Label>
@@ -32,7 +30,19 @@ class CountryForm extends Component {
           onChange={e => setsearchCountries(e.target.value)} />
       </Form.Group>
     </Form >
+  )
 
-  }
+
+
+  return (
+    < CountryCard />
+  )
+
+
 }
-export default CountryForm
+
+
+function mapStateToProps(state) {
+  return { countries: state.countries }
+}
+export default connect(mapStateToProps, { fetchCountries })(CountryForm);

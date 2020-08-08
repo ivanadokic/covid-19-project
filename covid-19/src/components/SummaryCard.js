@@ -7,10 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { fetchSummaries } from '../actions/summaries'
 
 function SummaryCard({ data }) {
+  // render()
+  // const date = new Date(parseInt(data.updated)),
+  // const newdate = date.toString(),
 
   return (
-
-    <CardDeck>
+    < CardDeck >
       <Card
         bg="secondary"
         text="white"
@@ -25,6 +27,7 @@ function SummaryCard({ data }) {
         </Card.Body>
         <Card.Footer>
           <small> Last updated {data.updated}</small>
+
         </Card.Footer>
       </Card >
 
@@ -63,7 +66,6 @@ function SummaryCard({ data }) {
     </CardDeck >
 
   )
-
 }
 
 export default SummaryCard

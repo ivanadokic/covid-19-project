@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { fetchSummaries } from '../actions/summaries'
 
 
+
 class SummaryList extends Component {
   componentDidMount() {
     this.props.fetchSummaries()

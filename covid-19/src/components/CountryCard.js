@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form'
 import { connect } from 'react-redux'
 import { fetchCountries } from '../actions/index'
 
+
 function CountryCard({ data }) {
   return (<Card
     bg="light"

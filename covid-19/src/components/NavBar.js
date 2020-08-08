@@ -18,6 +18,7 @@ const NavBar = () => {
             <LinkContainer to="/summary"><Nav.Link to="/summary"> Global Cases</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/countries"><Nav.Link to="/countries"> Cases by Country</Nav.Link></LinkContainer>
+            <LinkContainer to="/countries/form"><Nav.Link to="/countries"> Search by Country</Nav.Link></LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
