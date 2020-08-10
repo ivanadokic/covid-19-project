@@ -18,14 +18,14 @@ const NavBar = () => {
             <LinkContainer to="/summary"><Nav.Link to="/summary"> Global Cases</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/countries"><Nav.Link to="/countries"> Cases by Country</Nav.Link></LinkContainer>
-            <LinkContainer to="/countries/form"><Nav.Link to="/countries"> Search by Country</Nav.Link></LinkContainer>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Jumbotron>
         <h1>COVID-19 World Tracker</h1>
         <p>
-          This is a Covid-19 live case tracker.
+          This is a Covid-19 case tracker.
         </p>
 
       </Jumbotron>

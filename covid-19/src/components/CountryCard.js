@@ -31,16 +31,5 @@ function CountryCard({ data }) {
       <Card.Text>Population {data.population}</Card.Text>
     </Card.Body>
   </Card>);
-
-
-  //   return (<Form>
-  //     <Form.Group controlId="formGroupSearch">
-  //       <Form.Label>Search Country</Form.Label>
-  //       <Form.Control type="text"
-  //         placeholder="Enter Country name"
-  //         onChange={e => setsearchCountries(e.target.value)} />
-  //     </Form.Group>
-  //   </Form>
-  //   );
 }
 export default CountryCard
