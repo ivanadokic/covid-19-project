@@ -1,3 +1,14 @@
+## Project Requirements
+
+-Use the create-react-app generator
+-App should have one HTML page to render react-redux application
+-There should be 2 container components and 5 stateless components and 3 routes
+-The Application must make use of react-router and proper RESTful routing (react-router v4 was used)
+-Redux middleware should be used to respond to and modify state change
+-Make use of async actions and redux-thunk middleware to send data to and receive data from a server
+-Rails API should handle the data persistence with a database. fetch() should be used within actions to GET and POST data from API
+-Client-side application should handle the display of data with minimal data manipulation and Application should have some minimal styling, use react -bootstrap framework
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
