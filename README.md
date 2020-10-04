@@ -24,4 +24,20 @@
 
 -Your client-side application should handle the display of data with minimal data manipulation
 
+Covid-19 App backend functionality was build with Ruby on Rails RESTful API and the front end with React Redux.
 
+## Overview
+
+Covid-19 application easily explore and compare the COVID-19 outbreak worldwide, using real-time global data to check information like total, deaths and recovered cases or look into more detailed information for specific country such as: number of cases, recovered active, critical, tests, today’s cases, deaths and population.
+
+## Contributing
+
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the Fixit project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<AnnaWijetunga>/book_selector/blob/master/CODE_OF_CONDUCT.md).
