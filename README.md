@@ -48,14 +48,17 @@ Switch to the frontend (cd covid-19) and in the other terminal, switch to the ba
 Startup the server (within the backend terminal)
 
     $ rails s
-
-Enter in browser to launch the rails server
-
-    $  localhost:3000
   
 To begin the development, run `npm start`
 
 ## Usage
+COVID-19 World Tracker:
+### Global Cases tab
+will give the information like total number of covid-19 cases, deaths and recovered cases.
+
+### Cases by Country tab
+will give more detailed information for specific country such as: number of covid-19 cases, recovered cases, active cases, critical cases, tests, today’s cases, deaths and population.
+
 
 ## Contributing
 
