@@ -52,10 +52,8 @@ Startup the server (within the backend terminal)
 Enter in browser to launch the rails server
 
     $  localhost:3000
-
-Open index.html (within the frontend terminal)
-
-    $ open index.html
+  
+To begin the development, run `npm start`
 
 ## Usage
 
