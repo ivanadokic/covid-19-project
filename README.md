@@ -30,6 +30,11 @@ Covid-19 App backend functionality was build with Ruby on Rails RESTful API and 
 
 Covid-19 application easily explore and compare the COVID-19 outbreak worldwide, using real-time global data to check information like total, deaths and recovered cases or look into more detailed information for specific country such as: number of cases, recovered active, critical, tests, today’s cases, deaths and population.
 
+## Video Walkthrough
+
+For short walkthrough please click here:
+https://vimeo.com/464849075/93202508d7
+
 ## Installation
 
 Fork and clone repo
