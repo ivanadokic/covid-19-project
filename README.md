@@ -32,7 +32,7 @@ Covid-19 application easily explore and compare the COVID-19 outbreak worldwide,
 
 ## Video Walkthrough
 
-For short walkthrough please click here:
+For short video walkthrough please click here:
 https://vimeo.com/464849075/93202508d7
 
 ## Installation
