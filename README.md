@@ -1,4 +1,6 @@
 # covid-19-project
+<a href="https://imgur.com/9Jv7B04"><img src="https://i.imgur.com/9Jv7B04l.jpg" title="source: imgur.com" /></a>
+
 
 ## Project Requirements:
 
