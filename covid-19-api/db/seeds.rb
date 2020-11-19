@@ -25,7 +25,7 @@ end
 
 
 def seed_countries
-  puts "Seeding countries, currently #{Country.count} last updated #{Country.maximum(:updated_at)}"
+  puts "Seeding countries, currently #{Country.count} last updated #{Country.maximum(:updated_at)}" #last updated timestamp
   countries = HTTParty.get(COUNTRIES_DATA_URL)
   countries.each do |country_data|
     country = Country.find_or_initialize_by(country: country_data["country"])
