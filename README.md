@@ -10,11 +10,7 @@
 
 -app should have one HTML page to render react-redux application
 
--there should be 2 container components
-
--there should be 5 stateless components
-
--there should be 3 routes
+-there should be 2 container components, 5 stateless components and 3 routes
 
 -The Application must make use of react-router and proper RESTful routing
 
